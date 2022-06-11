@@ -1,7 +1,14 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+
+import Header from "../components/Header";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <div className="font-sans">
+      <Header />
+      <Component {...pageProps} />
+    </div>
+  );
 }
 
-export default MyApp
+export default MyApp;

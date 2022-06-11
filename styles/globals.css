@@ -1,16 +1,33 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@font-face {
+    font-family: "yyx";
+    src: url("/fonts/regular.eot");
+    src: url("/fonts/regular.woff") format("woff"),
+    url("/fonts/regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+    font-family: "yyx";
+    src: url("/fonts/semibold.eot");
+    src: url("/fonts/semibold.woff") format("woff"),
+    url("/fonts/semibold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
-* {
-  box-sizing: border-box;
+@font-face {
+    font-family: "yyx";
+    src: url("/fonts/bold.woff") format("woff"),
+    url("/fonts/bold.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
